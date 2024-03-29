@@ -1,0 +1,38 @@
+/* form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}  */
+
+body {
+    background-image: url('mejores-tatuadores-del-mundo-scaled-e1657542931163.jpeg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda el área del cuerpo */
+    background-position: center; /* Posiciona la imagen en el centro */
+    height: 100%;
+    width: 100%;
+    /* margin: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+}
+
+/* .divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+} */
