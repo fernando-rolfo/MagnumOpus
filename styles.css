@@ -4,13 +4,55 @@ body {
 }
 
 .body-login {
-    background-image: url('images/mejores-tatuadores-del-mundo-scaled-e1657542931163.jpeg'); /* Ruta a tu imagen de fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda el área del cuerpo */
-    background-position: center; /* Posiciona la imagen en el centro */
+    background-image: url('images/mejores-tatuadores-del-mundo-scaled-e1657542931163.jpeg');
+    /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir toda el área del cuerpo */
+    background-position: center;
+    /* Posiciona la imagen en el centro */
 }
 
-footer .text-body-secondary{
+.footer-container {
+    margin-top: 150px;
+}
+
+footer .text-body-secondary {
     color: aqua !important;
+}
+
+.carousel-inner {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.carousel-inner .carousel-item:nth-child(1) .transparent-caption{
+    background-color: rgba(100, 100, 100, 0.6);
+}
+
+.carousel-inner .carousel-item:nth-child(2) .transparent-caption{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-inner .carousel-item:nth-child(3) .transparent-caption{
+    background-color: rgba(255, 215, 0, 0.7);
+}
+
+.transparent-caption {
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+    border-radius: 40px; /* Añade esquinas redondeadas */
+}
+
+.carousel-caption {
+   margin-bottom: 30px;
+}
+
+.carousel-caption * {
+    color: white !important;
+    /* font-size: 90%; */
+}
+
+.carousel-caption p {
+    font-size: 90%; 
 }
 
 .userNamesContainer {
@@ -27,34 +69,49 @@ footer .text-body-secondary{
 }
 
 .image-container {
-    width: 130px; /* Ajusta el tamaño según tus necesidades */
-    height: 130px; /* Ajusta el tamaño según tus necesidades */
-    border-radius: 50%; /* Hace que la imagen tenga forma circular */
-    overflow: hidden; /* Oculta las partes de la imagen que se desbordan del contenedor circular */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega sombra a los bordes */
+    width: 130px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: 130px;
+    /* Ajusta el tamaño según tus necesidades */
+    border-radius: 50%;
+    /* Hace que la imagen tenga forma circular */
+    overflow: hidden;
+    /* Oculta las partes de la imagen que se desbordan del contenedor circular */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* Agrega sombra a los bordes */
 }
 
 .circular-image {
     display: block;
-    width: 100%; /* Ajusta el tamaño de la imagen para que llene el contenedor circular */
-    height: 
-    auto;
+    width: 100%;
+    /* Ajusta el tamaño de la imagen para que llene el contenedor circular */
+    height:
+        auto;
 }
 
 .testimonies-container {
     display: flex;
     flex-direction: column;
-    /* width: 70%; */
     font-weight: 100;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
+    /* margin:0%; */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
 }
 
 .testimonies-title {
     text-align: center;
-    margin: 70px;
+    margin-top: 70px;
+    margin-bottom: 45px;
+}
+
+.testimonies-title h1 {
+    font-size: 300%;
+}
+
+.double-testimony {
+    /* height: 600px; */
 }
 
 .double-testimony-item {
@@ -66,24 +123,36 @@ footer .text-body-secondary{
 
 .testimony-item {
     display: flex;
-    padding: 40px;
+    padding-inline: 3%;
     flex-direction: column;
     align-items: center;
+    /* align-content: space-between; */
+    /* height: fit-content; */
 }
 
 .image-testimony {
-    width: 70px; /* Ajusta el tamaño según tus necesidades */
-    height: 70px; /* Ajusta el tamaño según tus necesidades */
-    border-radius: 50%; /* Hace que la imagen tenga forma circular */
-    overflow: hidden; /* Oculta las partes de la imagen que se desbordan del contenedor circular */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega sombra a los bordes */
-    align-items: center;
-    justify-content: center;
-    /* width: 100%; */
+    width: 70px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: 70px;
+    /* Ajusta el tamaño según tus necesidades */
+    border-radius: 50%;
+    /* Hace que la imagen tenga forma circular */
+    overflow: hidden;
+    /* Oculta las partes de la imagen que se desbordan del contenedor circular */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* Agrega sombra a los bordes */
+    /* align-items: center;
+    justify-content: center; */
+    margin-bottom: 20px;
 }
 
 .image-testimony .circular-image {
     width: 70px;
     align-items: center;
     justify-content: center;
+}
+
+.text-testimony {
+    font-size: 80%;
+    color: silver;
 }
