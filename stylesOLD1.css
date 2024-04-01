@@ -1,13 +1,8 @@
-/* body,
+body,
 html {
     background-color: black;
     color: white !important;
     height: 100%;
-} */
-
-body {
-    background: linear-gradient(to bottom left, #808080, #000000 40%);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .body-login {
@@ -19,10 +14,6 @@ body {
     /* Posiciona la imagen en el centro */
 }
 
-.header-menu {
-    color: white;
-}
-
 .footer-container {
     margin-top: 150px;
 }
@@ -31,51 +22,55 @@ footer .text-body-secondary {
     color: aqua !important;
 }
 
-.courses-title {
-    margin-left: 25%;
-    margin-right: 25%;
-    text-align: center;
+.transparent-content {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 30%;
+    padding: 5px;
+    /* text-align: center; */
 }
 
-.cards-container {
+.transparent-content p {
+    width: 100%;
+}
+
+.transparent-button {
+    border-radius: 10px;
+    font-size: 30px;
+    border-color: transparent;
+    padding: 10px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.transparent-content:nth-child(1) .transparent-button {
+    background-color: rgba(100, 100, 100, 1);
+}
+
+.transparent-content:nth-child(2) .transparent-button {
+    background-color: rgba(0, 0, 0, 1);
+    border-color: black;
+}
+
+.transparent-content:nth-child(3) .transparent-button {
+    background-color: rgba(255, 215, 0, 1);
+    border-color: white;
+}
+
+.course-text {
+    font-size: 50%;
+}
+
+.userNamesContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.card-course {
-    margin: 1%;
-    margin-top: 3%;
-    width: 22rem;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+.userNamesContainer div {
+    width: 49%;
 }
 
-.card-header {
-    text-align: center;
-}
-
-.card-img-top {
-    height: 286px;
-}
-
-.course-list-item {
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.course-item-buttons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 6%;
-}
-
-.course-item-buttons a:nth-child(2) {
-    border-color: yellowgreen;
-    border-width: 1px;
-    border-style: solid;
+.card {
+    max-width: 1000px;
 }
 
 .image-container {
@@ -116,7 +111,12 @@ footer .text-body-secondary {
 }
 
 .testimonies-title h1 {
+    font-family: cursive;
     font-size: 300%;
+}
+
+.double-testimony {
+    /* height: 600px; */
 }
 
 .double-testimony-item {
@@ -165,10 +165,4 @@ footer .text-body-secondary {
     color: silver;
     font-weight: 100;
     font-style: italic;
-}
-
-/* Login html */
-
-.card-login {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
