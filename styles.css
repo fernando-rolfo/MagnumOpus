@@ -51,10 +51,22 @@ footer .text-body-secondary {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: transform 0.2s ease;
+}
+
+.card-course:hover {
+    transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al 105% */
 }
 
 .card-header {
     text-align: center;
+    border: 1;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.card-body div ul li {
+    border-color: silver;
 }
 
 .card-img-top {
