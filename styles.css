@@ -19,6 +19,13 @@ body {
     /* Posiciona la imagen en el centro */
 }
 
+.header-magnum-opus-image {
+    width: 65px;
+    height: 55px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .header-menu {
     color: white;
 }
@@ -52,6 +59,7 @@ footer .text-body-secondary {
     overflow: hidden;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     transition: transform 0.2s ease;
+    background-color: rgba(70, 155, 246, 0.418) !important;
 }
 
 .card-course:hover {
@@ -66,6 +74,7 @@ footer .text-body-secondary {
 }
 
 .card-body div ul li {
+    background-color: inherit;
     border-color: silver;
 }
 
@@ -109,6 +118,40 @@ footer .text-body-secondary {
     /* Ajusta el tamaño de la imagen para que llene el contenedor circular */
     height:
         auto;
+}
+
+.topics-container .courses-topics {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.topics-container .topics-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.topics-container .course-topics-collapse {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /* justify-items: center; */
+    /* align-content: center; */
+    align-items: center !important;
+    height: fit-content;
+    border: solid;
+    border-radius: 10px;
+    border-color: rgba(128, 128, 128, 1);
+    margin-top: 4%;
+}
+
+.topics-container .course-topics-collapse > *{
+    margin: 2%;
+}
+
+.topics-container .course-topics-collapse .collapse-topics-items {
+    width: 100%;
 }
 
 .testimonies-container {
