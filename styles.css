@@ -67,8 +67,16 @@ footer .text-body-secondary {
     transition: transform 0.2s ease;
     /* background-color: rgba(70, 155, 246, 0.418) !important; */
     /* background-color: rgba(43, 255, 0, 0.518) !important; */
-    background-color: rgba(41, 208, 8, 0.518) !important;
-    color: white !important;
+    /* background-color: rgba(41, 208, 8, 0.518) !important; */
+    background-color: rgb(24, 128, 3) !important;
+}
+
+.card-course h3 {
+    color: white;
+}
+
+.card-course .card-body li {
+    color: black !important;
 }
 
 @media screen and (max-width: 1000px) {
@@ -168,6 +176,20 @@ footer .text-body-secondary {
 
 .topics-container .course-topics-collapse .collapse-topics-items {
     width: 100%;
+}
+
+.table * {
+    background-color: transparent !important;
+    --bs-table-bg: transparent !important;
+    color: white !important;
+}
+
+.bi-caret-down-square {
+    fill: white;
+}
+
+.bi-caret-up-square {
+    fill: white;
 }
 
 .testimonies-container {
