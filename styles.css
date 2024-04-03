@@ -66,7 +66,8 @@ footer .text-body-secondary {
     box-shadow: 0 0 10px rgba(43, 43, 43, 0);
     transition: transform 0.2s ease;
     /* background-color: rgba(70, 155, 246, 0.418) !important; */
-    background-color: rgba(43, 255, 0, 0.518) !important;
+    /* background-color: rgba(43, 255, 0, 0.518) !important; */
+    background-color: rgba(41, 208, 8, 0.518) !important;
     color: white !important;
 }
 
@@ -110,7 +111,7 @@ footer .text-body-secondary {
 
 .course-item-buttons a:nth-child(2) {
     border-color: yellowgreen;
-    border-width: 1px;
+    border-width: 2px !important;
     border-style: solid;
 }
 
