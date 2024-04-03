@@ -62,8 +62,15 @@ footer .text-body-secondary {
     background-color: rgba(70, 155, 246, 0.418) !important;
 }
 
+@media screen and (max-width: 1000px) {
+    .card-course {
+        width: 20rem;
+    }
+}
+
 .card-course:hover {
-    transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al 105% */
+    transform: scale(1.05);
+    /* Aumentar el tamaño de la tarjeta al 105% */
 }
 
 .card-header {
@@ -146,7 +153,7 @@ footer .text-body-secondary {
     margin-top: 4%;
 }
 
-.topics-container .course-topics-collapse > *{
+.topics-container .course-topics-collapse>* {
     margin: 2%;
 }
 
