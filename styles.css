@@ -178,8 +178,8 @@ footer .text-body-secondary {
     width: 100%;
 }
 
-.table * {
-    background-color: transparent !important;
+.table {
+    /* background-color: transparent !important; */
     --bs-table-bg: transparent !important;
     color: white !important;
 }
