@@ -115,10 +115,6 @@ footer .text-body-secondary {
     font-size: 300%;
 }
 
-.double-testimony {
-    /* height: 600px; */
-}
-
 .double-testimony-item {
     display: flex;
     flex-direction: row;

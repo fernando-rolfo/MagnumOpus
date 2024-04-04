@@ -1,9 +1,8 @@
-// footer.js
+// header.js
 document.addEventListener("DOMContentLoaded", function() {
-    // Selecciona el elemento donde deseas insertar el contenido del footer
     var headerContainer = document.getElementById("header-container-id");
 
-    // Crea una instancia de XMLHttpRequest para cargar el contenido del footer.html
+    // Crea una instancia de XMLHttpRequest para cargar el contenido del header.html
     var xhttp = new XMLHttpRequest();
 
     // Define la función que manejará la respuesta del servidor
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 
-    // Especifica la ruta de tu archivo footer.html
+    // Especifica la ruta de tu archivo header.html
     xhttp.open("GET", "header.html", true);
 
     // Envía la solicitud al servidor

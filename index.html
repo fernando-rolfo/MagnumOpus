@@ -59,6 +59,40 @@
         </div>
     </div>
 
+    <!-- Modal for Purchase -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+        style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalCenterTitle">Ten acceso a tu curso en unos pocos pasos!
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="email-form">
+                    <div class="modal-body">
+                        <label for="to">Correo electrónico:</label>
+                        <input type="email" id="to" name="to" required><br><br>
+                        <ol>
+                            <li>¡Déjanos tu correo electrónico y te enviaremos los datos para realizar el pago y puedas
+                                acceder al curso!</li>
+                            <li>Luego de realizado el pago, envíanos el comprobante al contacto que te incluiremos en
+                                dicho mail.</li>
+                            <li>Nosotros te brindaremos acceso al curso viculandolo a tu usuario y listo!</li>
+                        </ol>
+                        <p>En caso de que aún no estés registrado en nuestra web, puedes hacerlo <button
+                                id="buttonHereSignUp" class="btn btn-unline-light" type="button" data-bs-toggle="modal"
+                                data-bs-target="#modalSignin">aquí.</button></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Confirmar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div id="header-container-id"></div>
 
 
@@ -69,7 +103,7 @@
 
         <div class="cards-container">
             <div class="card card-course">
-                <img src="images/basic-tattoo.jpeg" class="card-img-top" alt="...">
+                <img src="images/initiation-img-course.jpeg" class="card-img-top course-image" alt="...">
                 <div class="card-header">
                     <h3>Iniciacion</h3>
                 </div>
@@ -92,12 +126,15 @@
                                 <path fill-rule="evenodd"
                                     d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
                             </svg></a>
-                        <a href="#" class="btn btn-success">Comprar ahora</a>
+                        <button id="buyNowButton" type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalCenter">
+                            Comprar ahora!
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="card card-course">
-                <img src="images/advanced-tattoo.jpeg" class="card-img-top" alt="...">
+                <img src="images/advanced-tattoo.jpeg" class="card-img-top course-image" alt="...">
                 <div class="card-header">
                     <h3>Especializacion</h3>
                 </div>
@@ -125,12 +162,15 @@
                                     d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
                             </svg>
                         </a>
-                        <a href="#" class="btn btn-success">Comprar ahora</a>
+                        <button id="buyNowButton" type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalCenter">
+                            Comprar ahora!
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="card card-course">
-                <img src="images/premium-tattoo.jpeg" class="card-img-top" alt="...">
+                <img src="images/premium-tattoo.jpeg" class="card-img-top course-image" alt="...">
                 <div class="card-header">
                     <h3>Avanzado</h3>
                 </div>
@@ -155,7 +195,10 @@
                                     d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
                             </svg>
                         </a>
-                        <a href="#" class="btn btn-success">Comprar ahora</a>
+                        <button id="buyNowButton" type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalCenter">
+                            Comprar ahora!
+                        </button>
                     </div>
                 </div>
             </div>
@@ -190,11 +233,11 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Qué es un tatuaje?</td>
+                                    <td>Aprendé a tatuar desde 0, sin conocimientos previos!</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Conceptos previos antes de realizar el tatuaje</td>
+                                    <td>Cómo se desarrolla un tatuaje paso a paso. Pasos previos, durante y después</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -202,19 +245,19 @@
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Tips de bioseguridad</td>
+                                    <td>Diferentes tipos de pieles y cómo trabajarlas (items de bioseguridad)</td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td>Cómo realizar el diseño y llevarlo a la piel</td>
+                                    <td>La importancia del espacio donde trabajamos</td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
-                                    <td>Técnicas de línea y sombras</td>
+                                    <td>Cómo armar un diseño y transferirlo a la piel</td>
                                 </tr>
                                 <tr>
                                     <td>7</td>
-                                    <td>Post tattoo</td>
+                                    <td>Técnicas de línea y sombras (completo)</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -247,19 +290,27 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Cómo realizar coberturas?</td>
+                                    <td>Cómo trabajar diseños complejos</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Fundamentos de colórimetria</td>
+                                    <td>Cómo armar piezas de gran escala</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Seminario de trabajos avanzados</td>
+                                    <td>Paso a paso para realizar un stencil y comprenderlo</td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Como organizar y desarrollar el tattoo paso a paso</td>
+                                    <td>Técnica agujas magnum para efecto pelo (tigres, leones, etc)</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Paso a paso de cómo poder realizar un cover Up</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Paso a paso de aplicación de colores</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -342,7 +393,7 @@
         </div>
         <div id="carouselExampleSlidesOnly" class="carousel slide testimonies-items" data-bs-ride="carousel">
             <div class="carousel-inner carousel-testimonies">
-                <div class="carousel-item double-testimony">
+                <div class="carousel-item active double-testimony">
                     <div class="double-testimony-item">
                         <div class="testimony-item">
                             <div class="image-testimony">
@@ -373,7 +424,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item active double-testimony">
+                <div class="carousel-item double-testimony">
                     <div class="double-testimony-item">
                         <div class="testimony-item">
                             <div class="image-testimony">
@@ -405,7 +456,22 @@
                 </div>
             </div>
         </div>
-
+        <div style="display: flex; flex-flow: row;">
+            <div style="display: flex; flex-direction: column;">
+                <div class="">
+                    <img src="images/549cc4db-69bc-4b0d-9373-8c57597a53fc.jpeg" alt="" width="500" height="500"
+                        style="border:5px solid black;">
+                </div>
+                <div>
+                    <img src="images/f8396171-a3a8-48f0-9be9-24c498ae4216.jpeg" alt="" width="500" height="500"
+                    style="border:5px solid black;">
+                </div>
+            </div>
+            <div class="">
+                <img src="images/WhatsApp Image 2024-04-03 at 7.44.25 PM.jpeg" width="500" height="800" alt=""
+                    style="border:5px solid black;">
+            </div>
+        </div>
     </div>
 
 

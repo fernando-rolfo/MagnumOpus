@@ -102,9 +102,16 @@ footer .text-body-secondary {
     border-color: silver;
 }
 
-.card-img-top {
+/* .card-img-top {
     height: 286px;
+} */
+
+.course-image {
+    height: 50%;
+    width: 100%;
+    border-radius: 20px;
 }
+
 
 .course-list-item {
     font-size: 14px;
@@ -117,31 +124,10 @@ footer .text-body-secondary {
     margin-top: 6%;
 }
 
-.course-item-buttons a:nth-child(2) {
+.course-item-buttons button:nth-child(2) {
     border-color: yellowgreen;
     border-width: 2px !important;
     border-style: solid;
-}
-
-.image-container {
-    width: 130px;
-    /* Ajusta el tamaño según tus necesidades */
-    height: 130px;
-    /* Ajusta el tamaño según tus necesidades */
-    border-radius: 50%;
-    /* Hace que la imagen tenga forma circular */
-    overflow: hidden;
-    /* Oculta las partes de la imagen que se desbordan del contenedor circular */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    /* Agrega sombra a los bordes */
-}
-
-.circular-image {
-    display: block;
-    width: 100%;
-    /* Ajusta el tamaño de la imagen para que llene el contenedor circular */
-    height:
-        auto;
 }
 
 .topics-container .courses-topics {
@@ -271,4 +257,27 @@ footer .text-body-secondary {
 
 .card-login {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Footer */
+
+.image-container {
+    width: 130px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: 130px;
+    /* Ajusta el tamaño según tus necesidades */
+    border-radius: 50%;
+    /* Hace que la imagen tenga forma circular */
+    overflow: hidden;
+    /* Oculta las partes de la imagen que se desbordan del contenedor circular */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* Agrega sombra a los bordes */
+}
+
+.circular-image {
+    display: block;
+    width: 100%;
+    /* Ajusta el tamaño de la imagen para que llene el contenedor circular */
+    height:
+        auto;
 }

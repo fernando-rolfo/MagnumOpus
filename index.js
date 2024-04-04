@@ -1,6 +1,11 @@
 var buttonCollapse1 = document.getElementById("collapseButton1");
 var buttonCollapse2 = document.getElementById("collapseButton2");
 var buttonCollapse3 = document.getElementById("collapseButton3");
+var buttonMoreInfo1 = document.getElementById("initiationInfoButton");
+var buttonMoreInfo2 = document.getElementById("specializationInfoButton");
+var buttonMoreInfo3 = document.getElementById("advancedInfoButton");
+var buttonBuyNow = document.getElementById("buyNowButton");
+
 
 // Función de flecha para manejar el evento de clic
 const topicsCollapse = (event) => {
@@ -18,16 +23,6 @@ const topicsCollapse = (event) => {
     }
 };
 
-buttonCollapse1.addEventListener("click", topicsCollapse);
-buttonCollapse2.addEventListener("click", topicsCollapse);
-buttonCollapse3.addEventListener("click", topicsCollapse);
-
-
-
-var buttonMoreInfo1 = document.getElementById("initiationInfoButton");
-var buttonMoreInfo2 = document.getElementById("specializationInfoButton");
-var buttonMoreInfo3 = document.getElementById("advancedInfoButton");
-
 const seeMoreInfo = (event) => {
     let button = event.currentTarget;
     let buttonCollapseId = button.getAttribute("href").split("#")[1];
@@ -38,6 +33,24 @@ const seeMoreInfo = (event) => {
     }
 }
 
+
+buttonCollapse1.addEventListener("click", topicsCollapse);
+buttonCollapse2.addEventListener("click", topicsCollapse);
+buttonCollapse3.addEventListener("click", topicsCollapse);
 buttonMoreInfo1.addEventListener("click", seeMoreInfo);
 buttonMoreInfo2.addEventListener("click", seeMoreInfo);
 buttonMoreInfo3.addEventListener("click", seeMoreInfo);
+
+
+$('#exampleModalCenter').on('shown.bs.modal', function () {
+    $('#buyNowButton').trigger('focus')
+})
+
+
+// const showModalForPurchase = (event) => {
+//     let modalforPurchase = document.getElementById("modalForPurchase");
+//     modalforPurchase
+// }
+
+// // Modal for purchase
+// buttonBuyNow.addEventListener("click", showModalForPurchase);
