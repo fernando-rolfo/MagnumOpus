@@ -200,7 +200,9 @@ footer .text-body-secondary {
 }
 
 .testimonies-title h1 {
-    font-size: 300%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
 }
 
 .testimonies-body {
@@ -318,6 +320,43 @@ footer .text-body-secondary {
     font-weight: 100;
     font-style: italic;
     text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .testimonies-container {
+        /* height: 1000px; */
+    }
+    .testimonies-body {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        row-gap: 10%;
+        /* height: 1000px; */
+    }
+    .grid-container {
+        max-width: 70%;
+    }
+    #carouselExampleSlidesOnly {
+        margin-top: 15px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    .image-testimony {
+        width: 50px;
+        height: 50px;
+    }
+    .image-testimony .circular-image {
+        width: 50px;
+    }
+    
+    .text-testimony {
+        color: silver;
+        font-size: 70%;
+        font-weight: 100;
+        font-style: italic;
+        text-align: center;
+    }
 }
 
 /* Login html */
