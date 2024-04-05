@@ -102,10 +102,6 @@ footer .text-body-secondary {
     border-color: silver;
 }
 
-/* .card-img-top {
-    height: 286px;
-} */
-
 .course-image {
     height: 50%;
     width: 100%;
@@ -185,6 +181,8 @@ footer .text-body-secondary {
     fill: white;
 }
 
+/* -------- Testiomenies --------- */
+
 .testimonies-container {
     display: flex;
     flex-direction: column;
@@ -205,23 +203,93 @@ footer .text-body-secondary {
     font-size: 300%;
 }
 
-.double-testimony-item {
+.testimonies-body {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 3%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 columnas de igual tamaño */
+    grid-template-rows: 1fr 1fr;
+    /* 2 filas de igual tamaño */
+    gap: 5px;
+    /* Espacio entre las celdas */
+    max-width: 670px;
+    /* Ancho máximo del grid */
+
+    box-shadow: 0px 0px 10px rgba(192, 192, 192, 1);
+    border-radius: 10px;
+    overflow: hidden;
+
+
+    /* margin: 0 auto; */
+    /* Centrar el grid */
+}
+
+.grid-item {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.large {
+    grid-column-start: 2;
+    /* grid-column: span 2; La celda abarca 2 columnas */
+    grid-row: span 2;
+    /* La celda abarca 2 filas */
+}
+
+.small {
+    grid-column: 1;
+    /* La celda está en la primera columna */
+    grid-row: 1;
+}
+
+.small:last-child {
+    grid-column: 1;
+    /* La tercera celda está en la segunda columna */
+    grid-row: 2;
+    /* La tercera celda abarca 2 filas */
+}
+
+.grid-item>img {
+    max-width: 100%;
+    /* Las imágenes ocuparán el ancho máximo disponible */
+    height: auto;
+    /* La altura se ajusta automáticamente para mantener la proporción */
+    border: 0px solid black;
+}
+
+#carouselExampleSlidesOnly {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-inner {
+    border: 1px solid rgba(192, 192, 192, 0.499);
+    border-radius: 50px;
     width: 100%;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    height: 50%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
 }
 
 .testimony-item {
     display: flex;
-    padding-inline: 3%;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    /* align-content: space-between; */
-    /* height: fit-content; */
+    justify-content: center;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
 }
 
 .image-testimony {
@@ -242,15 +310,14 @@ footer .text-body-secondary {
 
 .image-testimony .circular-image {
     width: 70px;
-    align-items: center;
-    justify-content: center;
 }
 
 .text-testimony {
-    font-size: 90%;
     color: silver;
+    font-size: 130%;
     font-weight: 100;
     font-style: italic;
+    text-align: center;
 }
 
 /* Login html */
