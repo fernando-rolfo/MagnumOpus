@@ -60,19 +60,19 @@
     </div>
 
     <!-- Modal for Purchase -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+    <div class="modal fade" id="purchaseModalCenter" tabindex="-1" aria-labelledby="purchaseModalCenterTitle"
         style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalCenterTitle">Ten acceso a tu curso en unos pocos pasos!
+                    <h1 class="modal-title fs-4" id="purchaseModalCenterTitle">Ten acceso a tu curso en unos pocos pasos!
                     </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form id="email-form">
                     <div class="modal-body">
-                        <label for="to">Correo electrónico:</label>
-                        <input type="email" id="to" name="to" required><br><br>
+                        <label for="inputEmail">Correo electrónico:</label>
+                        <input type="email" id="inputEmailId" name="inputEmail" required><br><br>
                         <ol>
                             <li>¡Déjanos tu correo electrónico y te enviaremos los datos para realizar el pago y puedas
                                 acceder al curso!</li>
@@ -82,11 +82,10 @@
                         </ol>
                         <p>En caso de que aún no estés registrado en nuestra web, puedes hacerlo <button
                                 id="buttonHereSignUp" class="btn btn-unline-light" type="button" data-bs-toggle="modal"
-                                data-bs-target="#modalSignin">aquí.</button></p>
+                                data-bs-target="#modalSignin">aquí</button></p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Confirmar</button>
+                        <button type="submit" class="btn btn-success">Confirmar</button>
                     </div>
                 </form>
             </div>
@@ -127,7 +126,7 @@
                                     d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
                             </svg></a>
                         <button id="buyNowButton" type="button" class="btn btn-success" data-bs-toggle="modal"
-                            data-bs-target="#exampleModalCenter">
+                            data-bs-target="#purchaseModalCenter">
                             Comprar ahora!
                         </button>
                     </div>
@@ -163,7 +162,7 @@
                             </svg>
                         </a>
                         <button id="buyNowButton" type="button" class="btn btn-success" data-bs-toggle="modal"
-                            data-bs-target="#exampleModalCenter">
+                            data-bs-target="#purchaseModalCenter">
                             Comprar ahora!
                         </button>
                     </div>
@@ -196,7 +195,7 @@
                             </svg>
                         </a>
                         <button id="buyNowButton" type="button" class="btn btn-success" data-bs-toggle="modal"
-                            data-bs-target="#exampleModalCenter">
+                            data-bs-target="#purchaseModalCenter">
                             Comprar ahora!
                         </button>
                     </div>

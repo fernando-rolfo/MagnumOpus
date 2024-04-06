@@ -25,6 +25,33 @@ body {
     background: linear-gradient(to bottom left, rgba(0, 0, 121, 1), #000000 70%);
 }
 
+#purchaseModalCenter>div>.modal-content {
+    border: solid;
+    border-color: green;
+}
+
+#inputEmailId {
+    width: 70%;
+}
+
+#purchaseModalCenter>div>.modal-content>form>.modal-body>ol>li::marker {
+    border: solid;
+    border-color: green;
+    color: skyblue;
+    font-weight: bold;
+}
+
+#buttonHereSignUp {
+    padding: 0;
+    border: 0;
+    font-weight: bold;
+    color: greenyellow;
+}
+
+#buttonHereSignUp:hover {
+    text-decoration: underline;
+}
+
 .header-magnum-opus-image {
     width: 65px;
     height: 55px;
@@ -252,7 +279,7 @@ footer .text-body-secondary {
     width: 100%;
 }
 
-.grid-item > img {
+.grid-item>img {
     max-width: 100%;
     /* Las imágenes ocuparán el ancho máximo disponible */
     height: 90%;
@@ -298,7 +325,7 @@ footer .text-body-secondary {
     height: 50%;
 }
 
-.image-testimony > img{
+.image-testimony>img {
     width: 100%;
 }
 
@@ -311,14 +338,11 @@ footer .text-body-secondary {
     padding: 15px;
 }
 
-.testimony-item > div > p {
+.testimony-item>div>p {
     margin: 0 !important;
 }
 
 @media screen and (max-width: 400px) {
-    .testimonies-container {
-        /* height: 1000px; */
-    }
     .testimonies-body {
         display: flex;
         flex-flow: column;
@@ -326,23 +350,27 @@ footer .text-body-secondary {
         row-gap: 10%;
         /* height: 1000px; */
     }
+
     .grid-container {
         max-width: 70%;
     }
+
     #carouselExampleSlidesOnly {
         margin-top: 15px;
         width: 70%;
         display: flex;
         align-items: center;
     }
+
     .image-testimony {
         width: 50px;
         height: 50px;
     }
+
     .image-testimony .circular-image {
         width: 50px;
     }
-    
+
     .text-testimony {
         color: silver;
         font-size: 70%;

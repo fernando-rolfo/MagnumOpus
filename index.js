@@ -40,17 +40,3 @@ buttonCollapse3.addEventListener("click", topicsCollapse);
 buttonMoreInfo1.addEventListener("click", seeMoreInfo);
 buttonMoreInfo2.addEventListener("click", seeMoreInfo);
 buttonMoreInfo3.addEventListener("click", seeMoreInfo);
-
-
-$('#exampleModalCenter').on('shown.bs.modal', function () {
-    $('#buyNowButton').trigger('focus')
-})
-
-
-// const showModalForPurchase = (event) => {
-//     let modalforPurchase = document.getElementById("modalForPurchase");
-//     modalforPurchase
-// }
-
-// // Modal for purchase
-// buttonBuyNow.addEventListener("click", showModalForPurchase);
