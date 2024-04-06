@@ -61,6 +61,7 @@ footer .text-body-secondary {
     margin: 1%;
     margin-top: 3%;
     width: 22rem;
+    height: 600px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(41, 208, 8, 1);
@@ -103,7 +104,7 @@ footer .text-body-secondary {
 }
 
 .course-image {
-    height: 50%;
+    height: 45%;
     width: 100%;
     border-radius: 20px;
 }
@@ -214,13 +215,14 @@ footer .text-body-secondary {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     /* 2 columnas de igual tamaño */
     grid-template-rows: 1fr 1fr;
     /* 2 filas de igual tamaño */
     gap: 5px;
     /* Espacio entre las celdas */
-    max-width: 670px;
+    /* max-width: 500px; */
+    max-width: 99%;
     /* Ancho máximo del grid */
 
     box-shadow: 0px 0px 10px rgba(192, 192, 192, 1);
@@ -233,7 +235,7 @@ footer .text-body-secondary {
 }
 
 .grid-item {
-    display: flex;
+    /* display: flex; */
     /* align-items: center; */
     /* justify-content: center; */
 }
@@ -245,23 +247,15 @@ footer .text-body-secondary {
     /* La celda abarca 2 filas */
 }
 
-.small {
-    grid-column: 1;
-    /* La celda está en la primera columna */
-    grid-row: 1;
+.grid-item {
+    height: 90%;
+    width: 100%;
 }
 
-.small:last-child {
-    grid-column: 1;
-    /* La tercera celda está en la segunda columna */
-    grid-row: 2;
-    /* La tercera celda abarca 2 filas */
-}
-
-.grid-item>img {
+.grid-item > img {
     max-width: 100%;
     /* Las imágenes ocuparán el ancho máximo disponible */
-    height: auto;
+    height: 90%;
     /* La altura se ajusta automáticamente para mantener la proporción */
     border: 0px solid black;
 }
@@ -276,7 +270,8 @@ footer .text-body-secondary {
     border: 1px solid rgba(192, 192, 192, 0.499);
     border-radius: 50px;
     width: 100%;
-    height: 50%;
+    height: 100%;
+    background-color: #ffffff2b;
 }
 
 .carousel-item {
@@ -286,40 +281,38 @@ footer .text-body-secondary {
 
 .testimony-item {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
+    align-content: center;
+    justify-items: center;
     justify-content: center;
-    padding: 5%;
-    width: 100%;
-    height: 100%;
+    width: 20%;
+    height: 20%;
+    background-color: rgba(14, 212, 209, 0.504);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .image-testimony {
-    width: 70px;
-    /* Ajusta el tamaño según tus necesidades */
-    height: 70px;
-    /* Ajusta el tamaño según tus necesidades */
-    border-radius: 50%;
-    /* Hace que la imagen tenga forma circular */
-    overflow: hidden;
-    /* Oculta las partes de la imagen que se desbordan del contenedor circular */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    /* Agrega sombra a los bordes */
-    /* align-items: center;
-    justify-content: center; */
-    margin-bottom: 20px;
+    width: fit-content;
+    height: 50%;
 }
 
-.image-testimony .circular-image {
-    width: 70px;
+.image-testimony > img{
+    width: 100%;
 }
 
 .text-testimony {
     color: silver;
-    font-size: 130%;
+    font-size: 100%;
     font-weight: 100;
     font-style: italic;
     text-align: center;
+    padding: 15px;
+}
+
+.testimony-item > div > p {
+    margin: 0 !important;
 }
 
 @media screen and (max-width: 400px) {
