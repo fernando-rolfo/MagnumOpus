@@ -1,15 +1,15 @@
-/* body,
-html {
-    background-color: black;
-    color: white !important;
-    height: 100%;
-} */
+html,
+body {
+    /* position: relative; */
+    /* height: 100%; */
+}
 
 body {
-    /* background: linear-gradient(to bottom left, #808080, #000000 40%); */
     background: linear-gradient(to bottom left, rgba(0, 0, 121, 1), #000000 60%);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     color: white;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .body-login {
@@ -19,6 +19,60 @@ body {
     /* Ajusta el tamaño de la imagen para cubrir toda el área del cuerpo */
     background-position: center;
     /* Posiciona la imagen en el centro */
+}
+
+.our-job-container {
+    height: 100vh;
+}
+
+.our-job-container > .our-job-title {
+    margin-top: 30px;
+}
+
+.gallery {
+    height: 60%;
+}
+
+.slick-list {
+    height: 100%;
+}
+
+.slick-track {
+    height: 100%;
+}
+
+.image-gallery {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* color del overlay con transparencia */
+    opacity: 0;
+    /* ocultar el overlay por defecto */
+    transition: opacity 0.5s;
+    /* efecto de transición suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-gallery:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+    /* mostrar el overlay al hacer hover en la imagen */
 }
 
 .modal-login>.modal-dialog>.modal-content {
@@ -71,10 +125,12 @@ footer .text-body-secondary {
     color: aqua !important;
 }
 
-.courses-title {
+.title-section {
     margin-left: 25%;
     margin-right: 25%;
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
 }
 
 .cards-container {
@@ -160,12 +216,6 @@ footer .text-body-secondary {
     margin-right: 10%;
 }
 
-.topics-container .topics-title {
-    width: 100%;
-    text-align: center;
-    margin-top: 10%;
-}
-
 .topics-container .course-topics-collapse {
     display: flex;
     flex-flow: row wrap;
@@ -221,70 +271,11 @@ footer .text-body-secondary {
     /* Centra horizontalmente */
 }
 
-.testimonies-title {
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 45px;
-}
-
-.testimonies-title h1 {
-    width: 100%;
-    text-align: center;
-    margin-top: 10%;
-}
-
 .testimonies-body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     column-gap: 3%;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* 2 columnas de igual tamaño */
-    grid-template-rows: 1fr 1fr;
-    /* 2 filas de igual tamaño */
-    gap: 5px;
-    /* Espacio entre las celdas */
-    /* max-width: 500px; */
-    max-width: 99%;
-    /* Ancho máximo del grid */
-
-    box-shadow: 0px 0px 10px rgba(192, 192, 192, 1);
-    border-radius: 10px;
-    overflow: hidden;
-
-
-    /* margin: 0 auto; */
-    /* Centrar el grid */
-}
-
-.grid-item {
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-}
-
-.large {
-    grid-column-start: 2;
-    /* grid-column: span 2; La celda abarca 2 columnas */
-    grid-row: span 2;
-    /* La celda abarca 2 filas */
-}
-
-.grid-item {
-    height: 90%;
-    width: 100%;
-}
-
-.grid-item>img {
-    max-width: 100%;
-    /* Las imágenes ocuparán el ancho máximo disponible */
-    height: 90%;
-    /* La altura se ajusta automáticamente para mantener la proporción */
-    border: 0px solid black;
 }
 
 #carouselExampleSlidesOnly {
@@ -345,7 +336,7 @@ footer .text-body-secondary {
 @media screen and (max-width: 400px) {
     .testimonies-body {
         display: flex;
-        flex-flow: column;
+        flex-flow: row wrap;
         align-items: center;
         row-gap: 10%;
         /* height: 1000px; */
@@ -360,11 +351,6 @@ footer .text-body-secondary {
         width: 70%;
         display: flex;
         align-items: center;
-    }
-
-    .image-testimony {
-        width: 50px;
-        height: 50px;
     }
 
     .image-testimony .circular-image {
@@ -407,4 +393,23 @@ footer .text-body-secondary {
     /* Ajusta el tamaño de la imagen para que llene el contenedor circular */
     height:
         auto;
+}
+
+/* Estilo para la imagen en pantalla completa */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
 }
